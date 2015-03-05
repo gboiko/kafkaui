@@ -9,7 +9,7 @@
   "author": "GBoiko <grisha.boyko@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gboyko/kafkaui"
+    "url": "https://github.com/gboiko/kafkaui"
   },
   "license": "MIT",
   "dependencies": {
