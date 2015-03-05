@@ -1,0 +1,33 @@
+html
+  head
+    title Kafka UI
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/static/css/index.css')
+  body
+    .container
+      .header
+        h3.text-muted Kafka UI
+      .row.input-element
+        .col-lg-12
+          .input-group
+            .input-group-btn
+              button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                span.selected-topic= topics[0].topic
+                span.caret
+              ul.dropdown-menu(role='menu')
+                each item in topics
+                  li
+                    a(href='#')= item.topic
+            input.form-control.message-input(type='text', placeholder='Enter message', required='', autofocus='')
+            span.input-group-btn
+              button.btn.btn-primary.message-sender(type="button") Send
+      .panel.panel-default
+        .panel-heading Messages
+        .panel-body
+          ul.list-group.message-board
+
+
+    script(src='https://code.jquery.com/jquery-2.1.3.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/static/javascript/app.js')

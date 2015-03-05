@@ -1,0 +1,20 @@
+{
+  "name": "kafka-ui",
+  "version": "0.0.1",
+  "description": "Web service to provide simple ui for kafka ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "GBoiko <grisha.boyko@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gboyko/kafkaui"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.2",
+    "jade": "^1.9.2",
+    "kafka-node": "^0.2.21"
+  }
+}
